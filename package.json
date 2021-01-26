@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.6.12",
+  "version": "2.6.13",
   "description": "Make your React Components aware of their width and/or height!",
   "license": "MIT",
   "main": "dist/react-sizeme.js",

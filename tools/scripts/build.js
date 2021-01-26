@@ -4,7 +4,6 @@ const prettyBytes = require('pretty-bytes')
 const gzipSize = require('gzip-size')
 const { pipe } = require('ramda')
 const { exec } = require('../utils')
-const packageJson = require('../../package.json')
 
 if (inInstall()) {
   process.exit(0)
@@ -22,5 +21,5 @@ function fileGZipSize(path) {
 }
 
 console.log(
-  `\ngzipped, the build is ${fileGZipSize(`dist/${packageJson.name}.min.js`)}`,
+  `\ngzipped, the build is ${fileGZipSize(`dist/react-sizeme.min.js`)}`,
 )

@@ -1,8 +1,9 @@
 const babel = require('rollup-plugin-babel')
 const { titleCase } = require('title-case')
-const packageJson = require('./package.json')
 
 process.env.BABEL_ENV = 'production'
+
+const name = 'react-sizeme'
 
 module.exports = {
   external: [
@@ -16,10 +17,10 @@ module.exports = {
   ],
   input: 'src/index.js',
   output: {
-    file: `dist/${packageJson.name}.js`,
+    file: `dist/${name}.js`,
     format: 'cjs',
     sourcemap: true,
-    name: titleCase(packageJson.name.replace(/-/g, ' ')).replace(/ /g, ''),
+    name: titleCase(name.replace(/-/g, ' ')).replace(/ /g, ''),
   },
   plugins: [
     babel({

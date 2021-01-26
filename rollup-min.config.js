@@ -1,9 +1,10 @@
 const { uglify } = require('rollup-plugin-uglify')
-const packageJson = require('./package.json')
 
 const baseConfig = require('./rollup.config.js')
 
+const name = 'react-sizeme'
+
 baseConfig.plugins.push(uglify())
-baseConfig.output.file = `dist/${packageJson.name}.min.js`
+baseConfig.output.file = `dist/${name}.min.js`
 
 module.exports = baseConfig
