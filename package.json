@@ -1,5 +1,8 @@
 {
-  "name": "react-sizeme",
+  "name": "@hypnosphi/react-sizeme",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "2.6.12",
   "description": "Make your React Components aware of their width and/or height!",
   "license": "MIT",
